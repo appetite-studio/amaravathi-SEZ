@@ -4,6 +4,7 @@ import { useEffect, useState, type ReactNode } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { AppTopbar } from "@/components/app-topbar";
+import { AppBottomNav } from "@/components/app-bottom-nav";
 import { MetricsBar } from "@/components/ui/metrics-bar";
 import { NotificationsSheet } from "@/components/notifications-sheet";
 import { ToastProvider } from "@/components/ui/toaster";
@@ -26,7 +27,7 @@ export function AppShell({ children }: { children: ReactNode }) {
       <div className="flex min-h-screen flex-col bg-bg">
         <AppTopbar onOpenNotifications={() => setNotifOpen(true)} />
         <MetricsBar items={metrics.topbar} />
-        <main className="flex-1">
+        <main className="flex-1 pb-[calc(64px+env(safe-area-inset-bottom))] md:pb-0">
           <AnimatePresence mode="wait">
             <motion.div
               key={pathname}
@@ -40,6 +41,7 @@ export function AppShell({ children }: { children: ReactNode }) {
             </motion.div>
           </AnimatePresence>
         </main>
+        <AppBottomNav />
         <NotificationsSheet open={notifOpen} onOpenChange={setNotifOpen} />
       </div>
     </ToastProvider>
