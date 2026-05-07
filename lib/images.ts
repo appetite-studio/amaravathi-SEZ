@@ -11,20 +11,20 @@ const u = (id: string, w = 1600) =>
   `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=80`;
 
 // PLACEHOLDER MAP — Landing page slots
-export const IMG_HERO_LANDING = "/hero-image.png"; // Amaravati capital — golden-hour aerial render (local asset in /public)
-export const IMG_FOUNDER_RESIDENCY = "/founder-residency.png"; // founder cohort workshop with countdown (local asset in /public)
+export const IMG_HERO_LANDING = "/hero-image.webp"; // Amaravati capital — golden-hour aerial render (local asset in /public)
+export const IMG_FOUNDER_RESIDENCY = "/founder-residency.webp"; // founder cohort workshop with countdown (local asset in /public)
 export const IMG_INCORPORATION = u("photo-1450101499163-c8848c66ca85", 1400); // paperwork / clean desk
 export const IMG_EVENTS_COHORTS = u("photo-1540575467063-178a50c2df87", 1400); // pitch night / auditorium
-export const IMG_AP_SKILLS_FUND = "/ap-skills-fund.png"; // founders collaborating around tablet (local asset in /public)
-export const IMG_LOCAL_HIRING = "/local-hiring.png"; // engineer with laptop in data-center corridor (local asset in /public)
+export const IMG_AP_SKILLS_FUND = "/ap-skills-fund.webp"; // founders collaborating around tablet (local asset in /public)
+export const IMG_LOCAL_HIRING = "/local-hiring.webp"; // engineer with laptop in data-center corridor (local asset in /public)
 export const IMG_AI_GOVERNANCE = u("photo-1518770660439-4636190af475", 1400); // abstract data / circuit
-export const IMG_GLOBAL_NETWORK = "/global-network.png"; // satellite view of Andhra Pradesh with Amaravati pinned (local asset in /public)
-export const IMG_WHY_AP = "/why-ap.png"; // Andhra waterfall and tea-garden landscape (local asset in /public)
-export const IMG_FOUNDER_COHORT_GROUP = "/founder-cohort.png"; // founder pitching to cohort at all-hands (local asset in /public)
+export const IMG_GLOBAL_NETWORK = "/global-network.webp"; // satellite view of Andhra Pradesh with Amaravati pinned (local asset in /public)
+export const IMG_WHY_AP = "/why-ap.webp"; // Andhra waterfall and tea-garden landscape (local asset in /public)
+export const IMG_FOUNDER_COHORT_GROUP = "/founder-cohort.webp"; // founder pitching to cohort at all-hands (local asset in /public)
 
 // PLACEHOLDER MAP — App page slots
-export const IMG_LOGIN_SPLIT = "/login-split.png"; // Amaravati centerpiece — wide aerial render with dome and cherry-blossom ring (local asset in /public)
-export const IMG_FOUNDER_PORTRAIT = "/founder-portrait.png"; // single founder portrait (local asset in /public)
+export const IMG_LOGIN_SPLIT = "/login-split.webp"; // Amaravati centerpiece — wide aerial render with dome and cherry-blossom ring (local asset in /public)
+export const IMG_FOUNDER_PORTRAIT = "/founder-portrait.webp"; // single founder portrait (local asset in /public)
 export const IMG_DISTRICT_MAP = u("photo-1577086664693-894d8405334a", 1600); // aerial / isometric city render
 
 // 8 community avatars — Unsplash portrait crops
