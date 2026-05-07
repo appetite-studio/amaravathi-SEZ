@@ -15,12 +15,12 @@ export const IMG_HERO_LANDING = "/hero-image.png"; // Amaravati capital — gold
 export const IMG_FOUNDER_RESIDENCY = u("photo-1497366216548-37526070297c", 1400); // modern coworking
 export const IMG_INCORPORATION = u("photo-1450101499163-c8848c66ca85", 1400); // paperwork / clean desk
 export const IMG_EVENTS_COHORTS = u("photo-1540575467063-178a50c2df87", 1400); // pitch night / auditorium
-export const IMG_AP_SKILLS_FUND = u("photo-1543269865-cbf427effbad", 1400); // training / classroom
-export const IMG_LOCAL_HIRING = u("photo-1573164713988-8665fc963095", 1400); // diverse Indian team in office
+export const IMG_AP_SKILLS_FUND = "/ap-skills-fund.png"; // founders collaborating around tablet (local asset in /public)
+export const IMG_LOCAL_HIRING = "/local-hiring.png"; // engineer with laptop in data-center corridor (local asset in /public)
 export const IMG_AI_GOVERNANCE = u("photo-1518770660439-4636190af475", 1400); // abstract data / circuit
-export const IMG_GLOBAL_NETWORK = u("photo-1451187580459-43490279c0fa", 1400); // world / network
+export const IMG_GLOBAL_NETWORK = "/global-network.png"; // satellite view of Andhra Pradesh with Amaravati pinned (local asset in /public)
 export const IMG_WHY_AP = u("photo-1599661046289-e31897846e41", 1600); // Indian river / capital landscape
-export const IMG_FOUNDER_COHORT_GROUP = u("photo-1556761175-5973dc0f32e7", 1400); // group of young founders
+export const IMG_FOUNDER_COHORT_GROUP = "/founder-cohort.png"; // founder pitching to cohort at all-hands (local asset in /public)
 
 // PLACEHOLDER MAP — App page slots
 export const IMG_LOGIN_SPLIT = u("photo-1517022812141-23620dba5c23", 1400); // dusk capital render
