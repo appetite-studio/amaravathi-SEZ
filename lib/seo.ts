@@ -27,7 +27,7 @@ export const SITE = {
    * Keep ≤ 160 chars for Google snippet truncation safety.
    */
   description:
-    "Apply for Founder Residency, incorporate in 11 days, hire from Andhra Pradesh, and build inside the Amaravati startup district — backed by the AP government.",
+    "Apply for Founder Residency, incorporate fast, hire from Andhra Pradesh, and build inside the Amaravati startup district — backed by the AP government.",
   twitter: "@amaravatistartup",
   publisher: "AIM States",
   region: "Andhra Pradesh, India",
