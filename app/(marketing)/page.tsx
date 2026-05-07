@@ -137,7 +137,7 @@ export default function LandingPage() {
       />
 
       <FeatureSplit
-        eyebrow="GLOBAL FOUNDER NETWORK"
+        eyebrow="FOUNDER NETWORK"
         title="A founder anywhere in the world. A district that backs them locally."
         body="Founders in 9 countries are already building from Amaravati. Pair a Founder Residency with the Founder Visa fast-track and arrive in two weeks."
         image={IMG_GLOBAL_NETWORK}
