@@ -11,7 +11,7 @@ const u = (id: string, w = 1600) =>
   `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=80`;
 
 // PLACEHOLDER MAP — Landing page slots
-export const IMG_HERO_LANDING = u("photo-1524492412937-b28074a5d7da", 1800); // Indian capital architecture / golden hour
+export const IMG_HERO_LANDING = "/hero-image.png"; // Amaravati capital — golden-hour aerial render (local asset in /public)
 export const IMG_FOUNDER_RESIDENCY = u("photo-1497366216548-37526070297c", 1400); // modern coworking
 export const IMG_INCORPORATION = u("photo-1450101499163-c8848c66ca85", 1400); // paperwork / clean desk
 export const IMG_EVENTS_COHORTS = u("photo-1540575467063-178a50c2df87", 1400); // pitch night / auditorium
@@ -24,7 +24,7 @@ export const IMG_FOUNDER_COHORT_GROUP = u("photo-1556761175-5973dc0f32e7", 1400)
 
 // PLACEHOLDER MAP — App page slots
 export const IMG_LOGIN_SPLIT = u("photo-1517022812141-23620dba5c23", 1400); // dusk capital render
-export const IMG_FOUNDER_PORTRAIT = u("photo-1531123897727-8f129e1688ce", 800); // single founder portrait
+export const IMG_FOUNDER_PORTRAIT = "/founder-portrait.png"; // single founder portrait (local asset in /public)
 export const IMG_DISTRICT_MAP = u("photo-1577086664693-894d8405334a", 1600); // aerial / isometric city render
 
 // 8 community avatars — Unsplash portrait crops

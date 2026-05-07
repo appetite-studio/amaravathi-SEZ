@@ -63,14 +63,13 @@ export function Hero() {
           className="relative"
         >
           <div className="relative aspect-[4/5] w-full border-2 border-[var(--border)] bg-[var(--header-dark)]">
-            {/* PLACEHOLDER: replace with final asset */}
             <Image
               src={IMG_HERO_LANDING}
               alt="Amaravati capital architecture at golden hour"
               fill
               priority
               sizes="(min-width: 1024px) 540px, 100vw"
-              className="object-cover"
+              className="object-cover object-center"
             />
             <div className="absolute inset-x-0 top-0 flex items-center justify-between border-b-2 border-white/20 bg-black/40 px-4 py-3 font-mono text-[10px] uppercase tracking-[0.22em] text-white backdrop-blur">
               <span>DISTRICT 01 / SECTOR A</span>
