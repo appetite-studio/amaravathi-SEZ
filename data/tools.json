@@ -1,0 +1,93 @@
+[
+  {
+    "id": "register-company",
+    "title": "REGISTER COMPANY",
+    "icon": "Building2",
+    "blurb": "Pvt Ltd / LLP incorporation through District Registry. 11-day median.",
+    "actionLabel": "FILE INCORPORATION"
+  },
+  {
+    "id": "apply-residency",
+    "title": "APPLY FOR RESIDENCY",
+    "icon": "IdCard",
+    "blurb": "Founder Residency permit. Tier I, II, and Visiting tracks.",
+    "actionLabel": "SUBMIT APPLICATION"
+  },
+  {
+    "id": "founder-housing",
+    "title": "BOOK FOUNDER HOUSING",
+    "icon": "Home",
+    "blurb": "Sector A & B units. Studio to 3-BHK. District-subsidised.",
+    "actionLabel": "RESERVE UNIT"
+  },
+  {
+    "id": "join-cohort",
+    "title": "JOIN NEXT COHORT",
+    "icon": "Users",
+    "blurb": "Quantum Valley Cohort opens in 18 days. 42 of 60 seats filled.",
+    "actionLabel": "RESERVE SEAT"
+  },
+  {
+    "id": "tax-benefits",
+    "title": "STARTUP TAX BENEFITS",
+    "icon": "Receipt",
+    "blurb": "30% capex rebate · zero state GST for 36 months · IPv6 grants.",
+    "actionLabel": "VIEW SCHEDULE"
+  },
+  {
+    "id": "skills-fund",
+    "title": "AP SKILLS FUND",
+    "icon": "GraduationCap",
+    "blurb": "Co-funded engineering hires from AP universities. ₹6L per seat.",
+    "actionLabel": "REQUEST GRANT"
+  },
+  {
+    "id": "events",
+    "title": "EVENTS",
+    "icon": "Calendar",
+    "blurb": "14 upcoming district events: investor AMAs, cohort dinners, hiring days.",
+    "actionLabel": "OPEN CALENDAR"
+  },
+  {
+    "id": "legal-desk",
+    "title": "LEGAL ASSISTANT",
+    "icon": "Scale",
+    "blurb": "District Legal Desk. SAFE, term sheets, cap tables, IP filings.",
+    "actionLabel": "START REQUEST"
+  },
+  {
+    "id": "documents",
+    "title": "DOCUMENTS VAULT",
+    "icon": "Files",
+    "blurb": "Encrypted founder, company, and compliance documents.",
+    "actionLabel": "OPEN VAULT"
+  },
+  {
+    "id": "district-map",
+    "title": "DISTRICT MAP",
+    "icon": "Map",
+    "blurb": "Interactive map of coworking, housing, mess, and government desks.",
+    "actionLabel": "VIEW MAP"
+  },
+  {
+    "id": "hiring-portal",
+    "title": "HIRING PORTAL",
+    "icon": "Briefcase",
+    "blurb": "Post roles. AP Skills Fund matches local engineering talent.",
+    "actionLabel": "POST ROLE"
+  },
+  {
+    "id": "founder-visa",
+    "title": "FOUNDER VISA SUPPORT",
+    "icon": "Plane",
+    "blurb": "Fast-track founder visa. 9-day median processing.",
+    "actionLabel": "START FILING"
+  },
+  {
+    "id": "mentor-matching",
+    "title": "MENTOR MATCHING",
+    "icon": "MessagesSquare",
+    "blurb": "Match with district mentors by stage, sector, and timezone.",
+    "actionLabel": "REQUEST MATCH"
+  }
+]

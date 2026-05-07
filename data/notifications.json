@@ -1,0 +1,44 @@
+[
+  {
+    "id": "n1",
+    "title": "Residency approved",
+    "body": "Your Founder Residency has been approved by the District Office.",
+    "kind": "approved",
+    "timestamp": "Today · 09:42 IST"
+  },
+  {
+    "id": "n2",
+    "title": "Founder meetup tomorrow",
+    "body": "District 01 Coworking · 18:30 IST · 42 founders attending.",
+    "kind": "event",
+    "timestamp": "Today · 08:11 IST"
+  },
+  {
+    "id": "n3",
+    "title": "AP startup policy updated",
+    "body": "New tax rebate slab notified for District 01 founders.",
+    "kind": "policy",
+    "timestamp": "Yesterday · 17:50 IST"
+  },
+  {
+    "id": "n4",
+    "title": "Investor AMA this Friday",
+    "body": "Sequoia Surge × Amaravati District. RSVP closes Thu.",
+    "kind": "event",
+    "timestamp": "Yesterday · 11:20 IST"
+  },
+  {
+    "id": "n5",
+    "title": "Local hiring compliance verified",
+    "body": "Neon AI · 84% local hires · Q1 verified.",
+    "kind": "verified",
+    "timestamp": "12 Mar · 14:02 IST"
+  },
+  {
+    "id": "n6",
+    "title": "New founder joined from Singapore",
+    "body": "Wei Lin · Quantum Valley Cohort · Founder Tier I.",
+    "kind": "new",
+    "timestamp": "11 Mar · 22:05 IST"
+  }
+]

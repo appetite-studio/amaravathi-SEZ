@@ -1,0 +1,52 @@
+[
+  {
+    "id": "e1",
+    "title": "Sequoia Surge × Amaravati AMA",
+    "host": "District 01 Auditorium",
+    "date": "27 Mar 2026",
+    "day": "FRI",
+    "time": "18:30 IST",
+    "tag": "INVESTOR",
+    "status": "Open"
+  },
+  {
+    "id": "e2",
+    "title": "Quantum Valley Cohort Kickoff",
+    "host": "District Mess Hall",
+    "date": "29 Mar 2026",
+    "day": "SUN",
+    "time": "19:00 IST",
+    "tag": "COHORT",
+    "status": "Confirmed"
+  },
+  {
+    "id": "e3",
+    "title": "AP Skills Fund — Engineer Hiring Day",
+    "host": "Sector A Plaza",
+    "date": "02 Apr 2026",
+    "day": "THU",
+    "time": "10:00 IST",
+    "tag": "HIRING",
+    "status": "Open"
+  },
+  {
+    "id": "e4",
+    "title": "District Legal Desk — Office Hours",
+    "host": "District Legal Desk",
+    "date": "04 Apr 2026",
+    "day": "SAT",
+    "time": "11:00 IST",
+    "tag": "LEGAL",
+    "status": "Limited"
+  },
+  {
+    "id": "e5",
+    "title": "Founder Housing Tour — Sector B",
+    "host": "Founder Housing Office",
+    "date": "06 Apr 2026",
+    "day": "MON",
+    "time": "16:30 IST",
+    "tag": "HOUSING",
+    "status": "Open"
+  }
+]

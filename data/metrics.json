@@ -1,0 +1,25 @@
+{
+  "topbar": [
+    { "value": 127, "label": "FOUNDERS", "highlight": true },
+    { "value": 42, "label": "STARTUPS REGISTERED" },
+    { "value": 318, "label": "AP JOBS COMMITTED" },
+    { "value": "₹8.4 CR", "label": "PROJECTED ACTIVITY" },
+    { "value": 14, "label": "UPCOMING EVENTS" }
+  ],
+  "district": [
+    { "label": "FOUNDERS ONBOARDED", "value": 127, "delta": "+12 this week", "highlight": true },
+    { "label": "COMPANIES REGISTERED", "value": 42, "delta": "+4 this week" },
+    { "label": "ACTIVE FOUNDER VISAS", "value": 89, "delta": "9-day avg processing" },
+    { "label": "AP JOBS CREATED", "value": 318, "delta": "84% local hires" },
+    { "label": "DISTRICT OCCUPANCY", "value": "68%", "delta": "Sector A · Sector B" },
+    { "label": "LOCAL HIRING RATIO", "value": "84%", "delta": "Compliance verified" }
+  ],
+  "categories": [
+    { "label": "AI x Governance", "ratio": 0.28 },
+    { "label": "FinTech", "ratio": 0.21 },
+    { "label": "ClimateTech", "ratio": 0.16 },
+    { "label": "EdTech", "ratio": 0.13 },
+    { "label": "Mobility", "ratio": 0.12 },
+    { "label": "BioTech", "ratio": 0.10 }
+  ]
+}

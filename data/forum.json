@@ -1,0 +1,104 @@
+{
+  "channels": [
+    { "id": "founders", "label": "Founder discussions", "unread": 12 },
+    { "id": "policy", "label": "Policy updates", "unread": 3 },
+    { "id": "govt", "label": "Government notices", "unread": 1 },
+    { "id": "office", "label": "Investor office hours", "unread": 7 },
+    { "id": "mentors", "label": "Mentor sessions", "unread": 0 },
+    { "id": "intros", "label": "Founder introductions", "unread": 5 },
+    { "id": "cohort", "label": "Cohort channels", "unread": 2 }
+  ],
+  "posts": [
+    {
+      "id": "p1",
+      "channel": "founders",
+      "authorIndex": 0,
+      "author": "Anjali Reddy",
+      "city": "Hyderabad",
+      "tag": "FOUNDER",
+      "body": "We just closed our first enterprise pilot with a Vijayawada bank using the District Legal Desk template. 11 days end-to-end. Genuinely faster than my Bangalore lawyer.",
+      "reactions": 38,
+      "replies": 12,
+      "timestamp": "2h ago",
+      "live": true
+    },
+    {
+      "id": "p2",
+      "channel": "policy",
+      "authorIndex": 1,
+      "author": "District 01 Office",
+      "city": "Amaravati",
+      "tag": "POLICY",
+      "body": "Notice 014/2026: 30% capex rebate extended to AI x Gov sub-category. Eligibility window opens 01 Apr.",
+      "reactions": 21,
+      "replies": 4,
+      "timestamp": "5h ago",
+      "live": false
+    },
+    {
+      "id": "p3",
+      "channel": "office",
+      "authorIndex": 2,
+      "author": "Karthik Iyer",
+      "city": "San Francisco",
+      "tag": "OFFICE HOURS",
+      "body": "Hosting an AMA Friday on India-out: how Amaravati incorporation actually compares to Delaware C-Corp + Singapore. Dropping a one-pager in #policy.",
+      "reactions": 47,
+      "replies": 19,
+      "timestamp": "Today · 09:30",
+      "live": true
+    },
+    {
+      "id": "p4",
+      "channel": "intros",
+      "authorIndex": 3,
+      "author": "Wei Lin",
+      "city": "Singapore",
+      "tag": "INTRO",
+      "body": "New founder, Quantum Valley Cohort. Building privacy-first identity infra. Looking for two AP-based engineers who care about cryptography. DMs open.",
+      "reactions": 14,
+      "replies": 6,
+      "timestamp": "11 Mar",
+      "live": false
+    },
+    {
+      "id": "p5",
+      "channel": "founders",
+      "authorIndex": 4,
+      "author": "Priya Nair",
+      "city": "Kochi",
+      "tag": "FOUNDER",
+      "body": "Coworking floor 3 has the best afternoon light in the entire district. Trying to convince myself this is a productivity tip.",
+      "reactions": 73,
+      "replies": 22,
+      "timestamp": "11 Mar",
+      "live": false
+    },
+    {
+      "id": "p6",
+      "channel": "cohort",
+      "authorIndex": 5,
+      "author": "Aditya Rao",
+      "city": "Bangalore",
+      "tag": "COHORT",
+      "body": "Quantum Valley Cohort kickoff dinner this Saturday at District Mess. Confirmed 38 founders, 6 partners, 4 LPs. Bring your one-pager.",
+      "reactions": 29,
+      "replies": 11,
+      "timestamp": "10 Mar",
+      "live": true
+    },
+    {
+      "id": "p7",
+      "channel": "govt",
+      "authorIndex": 6,
+      "author": "Department of IT, AP",
+      "city": "Amaravati",
+      "tag": "GOVT",
+      "body": "Founder Visa fast-track lane is now operational. Average processing: 9 days. Apply via Tools → Founder visa support.",
+      "reactions": 18,
+      "replies": 3,
+      "timestamp": "10 Mar",
+      "live": false
+    }
+  ]
+}

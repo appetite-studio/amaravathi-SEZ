@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Neon AI",
+    "type": "Pvt Ltd",
+    "cin": "U72900AP2026PTC014527",
+    "founded": "12 Mar 2026",
+    "category": "AI Infrastructure",
+    "stage": "Pre-seed",
+    "headcount": 4,
+    "localHires": 3,
+    "status": "Active Residency"
+  },
+  {
+    "name": "Appetite Studio",
+    "type": "LLP",
+    "cin": "AAJ-9821-AP",
+    "founded": "21 Apr 2026",
+    "category": "Consumer",
+    "stage": "Bootstrapped",
+    "headcount": 2,
+    "localHires": 2,
+    "status": "Compliance Verified"
+  }
+]

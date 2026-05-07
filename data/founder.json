@@ -1,0 +1,30 @@
+{
+  "name": "Diya Rajiv",
+  "tier": "Tier I — Founding Cohort",
+  "residencyId": "ASC-2026-00127",
+  "residencyType": "Founder Residency",
+  "status": "Active",
+  "issuedOn": "12 Mar 2026",
+  "validUntil": "12 Mar 2031",
+  "accessLevel": "Full Founder Access",
+  "homeCity": "Vijayawada, AP",
+  "originCountry": "India",
+  "company": "Neon AI",
+  "contributionScore": 847,
+  "contributionMax": 1000,
+  "localHiringRatio": 0.84,
+  "permits": [
+    "Coworking — District 01",
+    "Founder Housing — Sector A",
+    "District Events Pass",
+    "Government Liaison Channel",
+    "AP Skills Fund Access",
+    "Investor Office Hours"
+  ],
+  "milestones": [
+    { "label": "Application", "date": "04 Feb 2026", "status": "complete" },
+    { "label": "Verification", "date": "18 Feb 2026", "status": "complete" },
+    { "label": "Approval", "date": "10 Mar 2026", "status": "complete" },
+    { "label": "Active", "date": "12 Mar 2026", "status": "active" }
+  ]
+}

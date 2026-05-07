@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+/*
+  Brutalist registry tokens — see /style.md and /brand.md.
+  Everything here is the single source of truth for colour, radius, and
+  the offset-shadow hover signature shared across cards/buttons/inputs.
+*/
+
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --text-2: #667085;
+  --text-3: #98a2b3;
+  --border: #111111;
+  --border-soft: #e4e7ec;
+  --accent: #ff5a2a;
+  --accent-soft: #fff2ec;
+  --header-dark: #181818;
+  --success: #039855;
+  --warning: #f79009;
+  --radius: 0px;
+
+  --shadow-brutal: 6px 6px 0 #111111;
+  --shadow-brutal-sm: 3px 3px 0 #111111;
+
+  color-scheme: light;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-fg: var(--text);
+  --color-text: var(--text);
+  --color-text-2: var(--text-2);
+  --color-text-3: var(--text-3);
+  --color-border: var(--border);
+  --color-border-soft: var(--border-soft);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-header-dark: var(--header-dark);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-geist-mono);
+
+  --radius-none: 0px;
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+@layer base {
+  * {
+    border-color: var(--border-soft);
+  }
+  *:focus-visible {
+    outline: 2px solid var(--border);
+    outline-offset: 2px;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-geist-mono), ui-monospace, monospace;
+    letter-spacing: 0.02em;
+  }
+  .font-mono {
+    font-family: var(--font-geist-mono), ui-monospace, monospace;
+  }
+  .label {
+    font-family: var(--font-geist-mono), ui-monospace, monospace;
+    font-size: 11px;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--text-3);
+  }
+  .label-sm {
+    font-family: var(--font-geist-mono), ui-monospace, monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--text-3);
+  }
+  .hairline {
+    background-image: linear-gradient(
+      to right,
+      var(--border) 0,
+      var(--border) 6px,
+      transparent 6px,
+      transparent 14px
+    );
+    background-size: 14px 1px;
+    background-repeat: repeat-x;
+    background-position: bottom left;
+  }
+  .shadow-brutal {
+    box-shadow: var(--shadow-brutal);
+  }
+  .shadow-brutal-sm {
+    box-shadow: var(--shadow-brutal-sm);
+  }
+  .hover-brutal {
+    transition:
+      transform 180ms ease,
+      box-shadow 180ms ease;
+  }
+  .hover-brutal:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: var(--shadow-brutal);
+  }
+}

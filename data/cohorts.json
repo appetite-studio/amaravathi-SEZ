@@ -1,0 +1,13 @@
+{
+  "current": {
+    "name": "Quantum Valley Cohort",
+    "openInDays": 18,
+    "seatsTotal": 60,
+    "seatsFilled": 42,
+    "startsOn": "01 Apr 2026"
+  },
+  "history": [
+    { "name": "Krishna River Cohort", "graduated": "Dec 2025", "founders": 38 },
+    { "name": "Genesis Cohort", "graduated": "Sep 2025", "founders": 24 }
+  ]
+}
