@@ -116,8 +116,7 @@ export default function LoginPage() {
                   Access the district.
                 </h1>
                 <p className="text-[13px] text-[var(--text-2)]">
-                  Choose your role. This is a demo console &mdash; any
-                  credentials are accepted.
+                  Choose your role.
                 </p>
               </div>
 
@@ -146,7 +145,7 @@ export default function LoginPage() {
                       <div className="flex items-center justify-between border-2 border-[var(--border-soft)] bg-[var(--accent-soft)] p-3">
                         <div className="flex flex-col">
                           <div className="font-mono text-[10px] uppercase tracking-[0.18em] text-[var(--text-3)]">
-                            DEMO IDENTITY
+                            IDENTITY
                           </div>
                           <div className="font-mono text-[12px] uppercase tracking-[0.04em] text-[var(--text)]">
                             {preset.name} · {preset.role}

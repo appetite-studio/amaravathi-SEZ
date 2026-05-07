@@ -97,7 +97,7 @@ export function Hero() {
               </div>
             </div>
           </div>
-          <div className="absolute -left-3 -top-3 hidden border-2 border-[var(--border)] bg-white px-3 py-2 font-mono text-[10px] uppercase tracking-[0.18em] text-[var(--text)] shadow-[var(--shadow-brutal-sm)] sm:block">
+          <div className="absolute -left-3 -top-9 hidden border-2 border-[var(--border)] bg-white px-3 py-2 font-mono text-[10px] uppercase tracking-[0.18em] text-[var(--text)] shadow-[var(--shadow-brutal-sm)] sm:block">
             ASC · 2026
           </div>
         </motion.div>

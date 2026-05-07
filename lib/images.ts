@@ -23,7 +23,7 @@ export const IMG_WHY_AP = "/why-ap.png"; // Andhra waterfall and tea-garden land
 export const IMG_FOUNDER_COHORT_GROUP = "/founder-cohort.png"; // founder pitching to cohort at all-hands (local asset in /public)
 
 // PLACEHOLDER MAP — App page slots
-export const IMG_LOGIN_SPLIT = u("photo-1517022812141-23620dba5c23", 1400); // dusk capital render
+export const IMG_LOGIN_SPLIT = "/login-split.png"; // Amaravati centerpiece — wide aerial render with dome and cherry-blossom ring (local asset in /public)
 export const IMG_FOUNDER_PORTRAIT = "/founder-portrait.png"; // single founder portrait (local asset in /public)
 export const IMG_DISTRICT_MAP = u("photo-1577086664693-894d8405334a", 1600); // aerial / isometric city render
 
