@@ -45,9 +45,9 @@ export function Hero() {
             <Button asChild variant="secondary" size="lg">
               <Link href="/login">EXPLORE DISTRICT</Link>
             </Button>
-            <Button asChild variant="tag" size="md">
+            {/* <Button asChild variant="tag" size="md">
               <Link href="/login">JOIN FOUNDER COHORT</Link>
-            </Button>
+            </Button> */}
           </div>
           <div className="flex flex-wrap items-center gap-3 pt-2">
             <StatusPill kind="active" label="DISTRICT 01 · OPERATIONAL" />
