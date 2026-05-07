@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "compress:images": "node scripts/compress-images.mjs",
-    "compress:images:delete": "node scripts/compress-images.mjs --delete"
+    "compress:images:delete": "node scripts/compress-images.mjs --delete",
+    "seo:assets": "node scripts/generate-seo-assets.mjs"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.4",

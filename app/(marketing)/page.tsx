@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
@@ -19,6 +20,19 @@ import {
   IMG_WHY_AP,
 } from "@/lib/images";
 import { cohorts, metrics } from "@/lib/data";
+import { SITE } from "@/lib/seo";
+
+export const metadata: Metadata = {
+  title: "Founder Residency, Incorporation & AP Skills Fund",
+  description: SITE.description,
+  alternates: { canonical: "/" },
+  openGraph: {
+    title: `${SITE.name} — Build a startup from Amaravati.`,
+    description: SITE.description,
+    url: SITE.url,
+    type: "website",
+  },
+};
 
 export default function LandingPage() {
   return (
