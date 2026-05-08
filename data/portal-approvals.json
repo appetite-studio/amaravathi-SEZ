@@ -7,7 +7,9 @@
     "origin": "Bengaluru, IN",
     "submittedOn": "08 Apr 2026",
     "documents": "4 of 6",
-    "status": "PENDING DOCS"
+    "status": "PENDING DOCS",
+    "riskLevel": "STANDARD",
+    "officer": "R. Suresh · District Registrar"
   },
   {
     "id": "APP-2026-0186",
@@ -17,7 +19,9 @@
     "origin": "Hsinchu, TW",
     "submittedOn": "07 Apr 2026",
     "documents": "6 of 6",
-    "status": "UNDER REVIEW"
+    "status": "UNDER REVIEW",
+    "riskLevel": "LOW",
+    "officer": "K. Sharma · Visiting Researcher Cell"
   },
   {
     "id": "APP-2026-0188",
@@ -27,7 +31,9 @@
     "origin": "Belgrade, RS",
     "submittedOn": "06 Apr 2026",
     "documents": "6 of 6",
-    "status": "UNDER REVIEW"
+    "status": "UNDER REVIEW",
+    "riskLevel": "ELEVATED",
+    "officer": "V. Anand · Compliance Officer"
   },
   {
     "id": "APP-2026-0192",
@@ -37,7 +43,9 @@
     "origin": "Munich, DE",
     "submittedOn": "05 Apr 2026",
     "documents": "6 of 6",
-    "status": "APPROVED"
+    "status": "APPROVED",
+    "riskLevel": "LOW",
+    "officer": "K. Sharma · Visiting Researcher Cell"
   },
   {
     "id": "APP-2026-0193",
@@ -47,7 +55,9 @@
     "origin": "Vijayawada, AP",
     "submittedOn": "05 Apr 2026",
     "documents": "6 of 6",
-    "status": "APPROVED"
+    "status": "APPROVED",
+    "riskLevel": "LOW",
+    "officer": "M. Lakshmi · Sr. Deputy Registrar"
   },
   {
     "id": "APP-2026-0197",
@@ -57,7 +67,9 @@
     "origin": "Lagos, NG",
     "submittedOn": "03 Apr 2026",
     "documents": "5 of 6",
-    "status": "PENDING DOCS"
+    "status": "PENDING DOCS",
+    "riskLevel": "STANDARD",
+    "officer": "M. Lakshmi · Sr. Deputy Registrar"
   },
   {
     "id": "APP-2026-0201",
@@ -67,7 +79,9 @@
     "origin": "Chennai, IN",
     "submittedOn": "02 Apr 2026",
     "documents": "6 of 6",
-    "status": "UNDER REVIEW"
+    "status": "UNDER REVIEW",
+    "riskLevel": "STANDARD",
+    "officer": "R. Suresh · District Registrar"
   },
   {
     "id": "APP-2026-0205",
@@ -77,6 +91,8 @@
     "origin": "Cairo, EG",
     "submittedOn": "01 Apr 2026",
     "documents": "6 of 6",
-    "status": "APPROVED"
+    "status": "APPROVED",
+    "riskLevel": "LOW",
+    "officer": "K. Sharma · Visiting Researcher Cell"
   }
 ]
