@@ -1,0 +1,71 @@
+{
+  "summary": {
+    "active": 4,
+    "global": 2,
+    "apOrigin": 2,
+    "underReview": 1,
+    "accessLevel": "FULL DISTRICT ACCESS",
+    "districtPermissions": [
+      "Tower B · Level 12 · Office Permit",
+      "Coworking · District 01",
+      "Founder Housing · Sector A",
+      "Investor Office Hours",
+      "AP Skills Fund Access",
+      "Government Liaison Channel",
+      "District Events Pass",
+      "Legal Desk Direct Line"
+    ]
+  },
+  "permits": [
+    {
+      "id": "ASC-PRMT-2041-A",
+      "holder": "Diya Rajiv",
+      "type": "Founder Residency",
+      "issuedOn": "12 Mar 2026",
+      "validUntil": "12 Mar 2031",
+      "status": "ACTIVE ACCESS",
+      "stage": "Issued",
+      "qrPayload": "https://amaravati.startup/permit/ASC-FR-2026-00127"
+    },
+    {
+      "id": "ASC-PRMT-2041-B",
+      "holder": "Aarav Menon",
+      "type": "Founder Residency",
+      "issuedOn": "18 Mar 2026",
+      "validUntil": "12 Mar 2031",
+      "status": "ACTIVE ACCESS",
+      "stage": "Issued",
+      "qrPayload": "https://amaravati.startup/permit/ASC-FR-2026-00131"
+    },
+    {
+      "id": "ASC-PRMT-2041-C",
+      "holder": "Wei Lin",
+      "type": "Visiting Researcher",
+      "issuedOn": "21 Mar 2026",
+      "validUntil": "21 Sep 2026",
+      "status": "ACTIVE ACCESS",
+      "stage": "Issued",
+      "qrPayload": "https://amaravati.startup/permit/ASC-FR-2026-00148"
+    },
+    {
+      "id": "ASC-PRMT-2041-D",
+      "holder": "Priya Nair",
+      "type": "Founder Residency",
+      "issuedOn": "04 Apr 2026",
+      "validUntil": "04 Apr 2031",
+      "status": "ACTIVE ACCESS",
+      "stage": "Issued",
+      "qrPayload": "https://amaravati.startup/permit/ASC-FR-2026-00164"
+    },
+    {
+      "id": "ASC-PRMT-2041-E",
+      "holder": "Rohan Singh (incoming)",
+      "type": "Founder Residency",
+      "issuedOn": "—",
+      "validUntil": "—",
+      "status": "UNDER REVIEW",
+      "stage": "Document verification · 4/6 complete",
+      "qrPayload": null
+    }
+  ]
+}

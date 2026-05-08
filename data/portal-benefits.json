@@ -1,0 +1,102 @@
+{
+  "policyTier": "Policy Tier 02",
+  "unlockedSummary": "9 of 12 district benefits active",
+  "items": [
+    {
+      "id": "tax-incentive",
+      "title": "Tax Incentive · Innovation Class A",
+      "description": "30% capex rebate, 5-year holiday on AI infra spend. Notified under Notice 014/2026.",
+      "status": "ACTIVE",
+      "unlockedVia": "Tier I · Sectoral eligibility",
+      "category": "FISCAL"
+    },
+    {
+      "id": "founder-residency-subsidy",
+      "title": "Founder Residency Subsidy",
+      "description": "60% rebate on Founder Housing for the first 24 months. Sector A & B units.",
+      "status": "ACTIVE",
+      "unlockedVia": "Tier I · Founding cohort",
+      "category": "RESIDENCY"
+    },
+    {
+      "id": "startup-policy-access",
+      "title": "Startup Policy Access · AP",
+      "description": "Direct line to AP DPIIT cell. Pre-clearance on incentive applications under 7 days.",
+      "status": "ACTIVE",
+      "unlockedVia": "Verified entity",
+      "category": "POLICY"
+    },
+    {
+      "id": "investor-office-hours",
+      "title": "Investor Office Hours",
+      "description": "Curated weekly office hours with Sequoia, Peak XV, Lightspeed India, AP Innovation Fund.",
+      "status": "ACTIVE",
+      "unlockedVia": "Tier I",
+      "category": "CAPITAL"
+    },
+    {
+      "id": "mentor-network",
+      "title": "District Mentor Network",
+      "description": "Sector mentors across AI, GovTech, Climate. 6 mentor hours allotted per month.",
+      "status": "ACTIVE",
+      "unlockedVia": "Founder cohort participation",
+      "category": "TALENT"
+    },
+    {
+      "id": "legal-desk",
+      "title": "Legal Desk · Direct Line",
+      "description": "11-day enterprise contract turnaround. AP-state precedent templates.",
+      "status": "ACTIVE",
+      "unlockedVia": "Verified entity",
+      "category": "OPERATIONS"
+    },
+    {
+      "id": "fast-track-approvals",
+      "title": "Fast-Track Approvals",
+      "description": "9-day average processing for founder visas, permit renewals, expansion applications.",
+      "status": "ACTIVE",
+      "unlockedVia": "Tier I · Compliance verified",
+      "category": "OPERATIONS"
+    },
+    {
+      "id": "skills-fund",
+      "title": "AP Skills Fund Access",
+      "description": "Up to ₹50 Lakh per year for AP engineering hires + university partnerships.",
+      "status": "ACTIVE",
+      "unlockedVia": "84% local hiring · verified",
+      "category": "TALENT"
+    },
+    {
+      "id": "data-corridor",
+      "title": "AP Data Corridor",
+      "description": "Direct ingest from Andhra Pradesh datasets — health, mobility, agriculture — under research clauses.",
+      "status": "ACTIVE",
+      "unlockedVia": "Sectoral fit · AI Infrastructure",
+      "category": "DATA"
+    },
+    {
+      "id": "expansion-grant",
+      "title": "Series-A Expansion Grant",
+      "description": "Matching capex grant of up to ₹2 Cr at Series A. Filed against quarterly milestones.",
+      "status": "AVAILABLE",
+      "unlockedVia": "Eligibility opens at 24 months",
+      "category": "CAPITAL"
+    },
+    {
+      "id": "global-trade",
+      "title": "Global Trade Corridor",
+      "description": "Pre-cleared export channel for AI services. Singapore, UAE, US.",
+      "status": "UNDER REVIEW",
+      "unlockedVia": "Application 03 Apr · in review",
+      "category": "COMMERCE"
+    },
+    {
+      "id": "sovereign-pilot",
+      "title": "Sovereign AI Pilot",
+      "description": "Government-of-AP pilot deployments. Gated to Policy Tier 03.",
+      "status": "LOCKED",
+      "unlockedVia": "Requires Tier 03 promotion",
+      "category": "POLICY"
+    }
+  ]
+}

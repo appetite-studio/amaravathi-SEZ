@@ -1,0 +1,42 @@
+{
+  "ratio": 0.84,
+  "required": 0.40,
+  "headcount": 14,
+  "apResidents": 12,
+  "outOfState": 2,
+  "openRoles": 3,
+  "complianceStatus": "VERIFIED",
+  "complianceCycle": "Q1 2026",
+  "verifiedOn": "12 Mar 2026 · 14:02 IST",
+  "verifiedBy": "AP Skills Fund · Compliance Office",
+  "trainingHours": 412,
+  "trainingHoursTarget": 360,
+  "skillsFundContribution": "₹4.80 Lakh",
+  "internsActive": 6,
+  "internsTarget": 4,
+  "districtEmploymentContribution": "+8 net new AP jobs · Q1 2026",
+  "universities": [
+    { "name": "IIIT Sri City", "city": "Chittoor, AP", "engaged": "MoU active", "hires": 4, "interns": 2 },
+    { "name": "RGUKT Nuzvid", "city": "Krishna, AP", "engaged": "MoU active", "hires": 3, "interns": 2 },
+    { "name": "JNTU Kakinada", "city": "Kakinada, AP", "engaged": "Recruiting drive", "hires": 2, "interns": 1 },
+    { "name": "Andhra University", "city": "Visakhapatnam, AP", "engaged": "Pilot · 2026", "hires": 2, "interns": 1 },
+    { "name": "GITAM Visakhapatnam", "city": "Visakhapatnam, AP", "engaged": "Recruiting drive", "hires": 1, "interns": 0 }
+  ],
+  "hires": [
+    { "name": "Mounika Reddy", "role": "Engineer · Inference", "origin": "Tirupati, AP", "joined": "14 Mar 2026", "tier": "AP RESIDENT" },
+    { "name": "Rishi Varma", "role": "Engineer · Eval", "origin": "Vijayawada, AP", "joined": "20 Mar 2026", "tier": "AP RESIDENT" },
+    { "name": "Lakshmi Bhattacharya", "role": "Operations", "origin": "Visakhapatnam, AP", "joined": "22 Mar 2026", "tier": "AP RESIDENT" },
+    { "name": "Vasanth Kumar", "role": "Engineer · Tooling", "origin": "Guntur, AP", "joined": "28 Mar 2026", "tier": "AP RESIDENT" },
+    { "name": "Naveen Achanta", "role": "Engineer · Platform", "origin": "Kakinada, AP", "joined": "01 Apr 2026", "tier": "AP RESIDENT" },
+    { "name": "Sruthi Pothuri", "role": "Designer · Product", "origin": "Tirupati, AP", "joined": "05 Apr 2026", "tier": "AP RESIDENT" },
+    { "name": "Karthik Iyer", "role": "Engineer · Senior", "origin": "San Francisco", "joined": "11 Apr 2026", "tier": "OUT OF STATE" }
+  ],
+  "interns": [
+    { "name": "Tejaswi Bandari", "university": "IIIT Sri City", "track": "ML Eval", "duration": "12 weeks", "status": "ACTIVE" },
+    { "name": "Pranav Kothapalli", "university": "RGUKT Nuzvid", "track": "Inference Infra", "duration": "8 weeks", "status": "ACTIVE" },
+    { "name": "Hemanth Cheruku", "university": "JNTU Kakinada", "track": "Tooling", "duration": "12 weeks", "status": "ACTIVE" },
+    { "name": "Sneha Gajulapalli", "university": "Andhra University", "track": "Applied Research", "duration": "16 weeks", "status": "ACTIVE" },
+    { "name": "Aditya Reddy", "university": "IIIT Sri City", "track": "ML Eval", "duration": "8 weeks", "status": "ONBOARDING" },
+    { "name": "Bhargavi Rao", "university": "RGUKT Nuzvid", "track": "Backend", "duration": "12 weeks", "status": "ONBOARDING" }
+  ]
+}

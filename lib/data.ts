@@ -7,6 +7,18 @@ import cohortsJson from "@/data/cohorts.json";
 import metricsJson from "@/data/metrics.json";
 import toolsJson from "@/data/tools.json";
 
+import portalCompanyJson from "@/data/portal-company.json";
+import portalFoundersJson from "@/data/portal-founders.json";
+import portalResidencyJson from "@/data/portal-residency.json";
+import portalWorkspaceJson from "@/data/portal-workspace.json";
+import portalHiringJson from "@/data/portal-hiring.json";
+import portalBenefitsJson from "@/data/portal-benefits.json";
+import portalDocumentsJson from "@/data/portal-documents.json";
+import portalEventsJson from "@/data/portal-events.json";
+import portalActivityJson from "@/data/portal-activity.json";
+import portalDirectoryJson from "@/data/portal-directory.json";
+import portalApprovalsJson from "@/data/portal-approvals.json";
+
 export type Founder = typeof founderJson;
 export type Company = (typeof companiesJson)[number];
 export type Notification = (typeof notificationsJson)[number];
@@ -25,3 +37,28 @@ export const events: EventItem[] = eventsJson;
 export const cohorts: Cohorts = cohortsJson;
 export const metrics: Metrics = metricsJson;
 export const tools: Tool[] = toolsJson;
+
+export type PortalCompany = typeof portalCompanyJson;
+export type PortalFounder = (typeof portalFoundersJson)[number];
+export type PortalResidency = typeof portalResidencyJson;
+export type PortalWorkspace = typeof portalWorkspaceJson;
+export type PortalHiring = typeof portalHiringJson;
+export type PortalBenefits = typeof portalBenefitsJson;
+export type PortalBenefit = PortalBenefits["items"][number];
+export type PortalDocument = (typeof portalDocumentsJson)[number];
+export type PortalEvent = (typeof portalEventsJson)[number];
+export type PortalActivityItem = (typeof portalActivityJson)[number];
+export type PortalDirectoryItem = (typeof portalDirectoryJson)[number];
+export type PortalApproval = (typeof portalApprovalsJson)[number];
+
+export const portalCompany: PortalCompany = portalCompanyJson;
+export const portalFounders: PortalFounder[] = portalFoundersJson;
+export const portalResidency: PortalResidency = portalResidencyJson;
+export const portalWorkspace: PortalWorkspace = portalWorkspaceJson;
+export const portalHiring: PortalHiring = portalHiringJson;
+export const portalBenefits: PortalBenefits = portalBenefitsJson;
+export const portalDocuments: PortalDocument[] = portalDocumentsJson;
+export const portalEvents: PortalEvent[] = portalEventsJson;
+export const portalActivity: PortalActivityItem[] = portalActivityJson;
+export const portalDirectory: PortalDirectoryItem[] = portalDirectoryJson;
+export const portalApprovals: PortalApproval[] = portalApprovalsJson;

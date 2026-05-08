@@ -14,24 +14,33 @@ import { setSession, type Session } from "@/lib/store";
 import { simulate } from "@/lib/simulate";
 import { IMG_LOGIN_SPLIT } from "@/lib/images";
 
-const presets: Record<Session["role"], Omit<Session, "loggedInAt">> = {
+const presets: Record<
+  Session["role"],
+  Omit<Session, "loggedInAt"> & { destination: string; previewLine: string }
+> = {
   Founder: {
     name: "Diya Rajiv",
     role: "Founder",
-    company: "Neon AI",
+    company: "Neon AI Systems",
     email: "diya@neon.ai",
+    destination: "/app/identity",
+    previewLine: "DIYA RAJIV · FOUNDER",
   },
   Company: {
-    name: "Neon AI",
+    name: "Neon AI Systems",
     role: "Company",
-    company: "Neon AI · Pvt Ltd",
+    company: "Neon AI Systems · Pvt Ltd",
     email: "ops@neon.ai",
+    destination: "/company/overview",
+    previewLine: "NEON AI · COMPANY",
   },
   Government: {
     name: "Department of IT, AP",
     role: "Government",
     company: "Government of Andhra Pradesh",
     email: "preview@ap.gov.in",
+    destination: "/govt/overview",
+    previewLine: "DEPT. OF IT · GOVT PREVIEW",
   },
 };
 
@@ -45,8 +54,14 @@ export default function LoginPage() {
     setSubmitting(true);
     await simulate(600, 900);
     const preset = presets[role];
-    setSession({ ...preset, loggedInAt: new Date().toISOString() });
-    router.push("/app/identity");
+    setSession({
+      name: preset.name,
+      role: preset.role,
+      company: preset.company,
+      email: preset.email,
+      loggedInAt: new Date().toISOString(),
+    });
+    router.push(preset.destination);
   };
 
   const preset = presets[role];
@@ -55,7 +70,6 @@ export default function LoginPage() {
     <div className="grid min-h-[calc(100vh-72px)] grid-cols-1 lg:grid-cols-[1fr_0.9fr]">
       {/* Left pane - cinematic image */}
       <div className="relative hidden border-r-2 border-[var(--border)] bg-[var(--header-dark)] lg:block">
-        {/* PLACEHOLDER: replace with final asset */}
         <Image
           src={IMG_LOGIN_SPLIT}
           alt="Amaravati district at dusk"
@@ -102,7 +116,7 @@ export default function LoginPage() {
                     Amaravati · Startup Capital
                   </span>
                   <span className="font-mono text-[12px] font-bold uppercase tracking-[0.18em]">
-                    Founder Console · Login
+                    District Console · Login
                   </span>
                 </div>
               </div>
@@ -111,7 +125,7 @@ export default function LoginPage() {
 
             <div className="flex flex-col gap-6 p-7">
               <div className="flex flex-col gap-2">
-                <div className="label">[ SECURE LOGIN ]</div>
+                <div className="label">[ SECURE LOGIN · LOCAL SESSION ]</div>
                 <h1 className="font-display text-[28px] font-bold leading-tight tracking-[-0.01em]">
                   Access the district.
                 </h1>
@@ -140,7 +154,11 @@ export default function LoginPage() {
                   <TabsContent key={r} value={r}>
                     <form onSubmit={onSubmit} className="flex flex-col gap-4">
                       <Field label="EMAIL" defaultValue={preset.email} />
-                      <Field label="ACCESS KEY" defaultValue="••••••••••••" type="password" />
+                      <Field
+                        label="ACCESS KEY"
+                        defaultValue="••••••••••••"
+                        type="password"
+                      />
 
                       <div className="flex items-center justify-between border-2 border-[var(--border-soft)] bg-[var(--accent-soft)] p-3">
                         <div className="flex flex-col">
@@ -148,7 +166,7 @@ export default function LoginPage() {
                             IDENTITY
                           </div>
                           <div className="font-mono text-[12px] uppercase tracking-[0.04em] text-[var(--text)]">
-                            {preset.name} · {preset.role}
+                            {preset.previewLine}
                           </div>
                         </div>
                         <StatusPill kind="verified" label="PREFILLED" />
@@ -180,16 +198,20 @@ export default function LoginPage() {
 
               <div className="flex items-center justify-between border-t-2 border-[var(--border-soft)] pt-4 font-mono text-[10px] uppercase tracking-[0.18em] text-[var(--text-3)]">
                 <span>NO ACCOUNT?</span>
-                <Link href="/" className="text-[var(--text)] hover:text-[var(--accent)]">
+                <Link
+                  href="/"
+                  className="text-[var(--text)] hover:text-[var(--accent)]"
+                >
                   REQUEST RESIDENCY →
                 </Link>
               </div>
             </div>
           </div>
 
-          <div className="mt-4 flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--text-3)]">
+          <div className="mt-4 flex flex-wrap items-center justify-between gap-x-4 gap-y-1 font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--text-3)]">
+            <span>DEPT. OF IT · GOVT OF ANDHRA PRADESH · 2026</span>
             <span>SESSION · LOCAL ONLY</span>
-            <span>ASC · 2026</span>
+            <span>ASC · DISTRICT 01</span>
           </div>
         </motion.div>
       </div>

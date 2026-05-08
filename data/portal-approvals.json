@@ -1,0 +1,82 @@
+[
+  {
+    "id": "APP-2026-0184",
+    "applicant": "Rohan Singh",
+    "company": "Neon AI Systems",
+    "type": "Founder Residency",
+    "origin": "Bengaluru, IN",
+    "submittedOn": "08 Apr 2026",
+    "documents": "4 of 6",
+    "status": "PENDING DOCS"
+  },
+  {
+    "id": "APP-2026-0186",
+    "applicant": "Mei-Ling Chen",
+    "company": "Quantum Valley Systems",
+    "type": "Visiting Researcher",
+    "origin": "Hsinchu, TW",
+    "submittedOn": "07 Apr 2026",
+    "documents": "6 of 6",
+    "status": "UNDER REVIEW"
+  },
+  {
+    "id": "APP-2026-0188",
+    "applicant": "Jovan Petrović",
+    "company": "Tundra Ledger",
+    "type": "Founder Residency",
+    "origin": "Belgrade, RS",
+    "submittedOn": "06 Apr 2026",
+    "documents": "6 of 6",
+    "status": "UNDER REVIEW"
+  },
+  {
+    "id": "APP-2026-0192",
+    "applicant": "Annika Vogt",
+    "company": "Polar Quantum",
+    "type": "Visiting Researcher",
+    "origin": "Munich, DE",
+    "submittedOn": "05 Apr 2026",
+    "documents": "6 of 6",
+    "status": "APPROVED"
+  },
+  {
+    "id": "APP-2026-0193",
+    "applicant": "Tanvi Joshi",
+    "company": "Andhra Civic",
+    "type": "Founder Residency",
+    "origin": "Vijayawada, AP",
+    "submittedOn": "05 Apr 2026",
+    "documents": "6 of 6",
+    "status": "APPROVED"
+  },
+  {
+    "id": "APP-2026-0197",
+    "applicant": "Ifeoma Okoye",
+    "company": "Lattice Climate",
+    "type": "Founder Residency",
+    "origin": "Lagos, NG",
+    "submittedOn": "03 Apr 2026",
+    "documents": "5 of 6",
+    "status": "PENDING DOCS"
+  },
+  {
+    "id": "APP-2026-0201",
+    "applicant": "Vivaan Khanna",
+    "company": "Tarani BioWorks",
+    "type": "Founder Residency",
+    "origin": "Chennai, IN",
+    "submittedOn": "02 Apr 2026",
+    "documents": "6 of 6",
+    "status": "UNDER REVIEW"
+  },
+  {
+    "id": "APP-2026-0205",
+    "applicant": "Sara Khalil",
+    "company": "Hex Civic",
+    "type": "Visiting Researcher",
+    "origin": "Cairo, EG",
+    "submittedOn": "01 Apr 2026",
+    "documents": "6 of 6",
+    "status": "APPROVED"
+  }
+]

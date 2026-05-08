@@ -1,0 +1,31 @@
+{
+  "tower": "Tower B",
+  "level": "Level 12",
+  "districtZone": "Quantum Valley Hub",
+  "officeStatus": "Operational",
+  "officeSize": "2,400 sq ft",
+  "deskCapacity": 18,
+  "deskOccupancy": 14,
+  "internetTier": "Tier 1 · 10 Gbps · BSNL Innovation Backbone",
+  "powerTier": "Uninterrupted · APSPDCL Direct Feed",
+  "transportRoute": "District Loop · Stop B-12 · 4 min walk",
+  "housing": {
+    "sector": "Sector A · Founder Housing",
+    "units": 4,
+    "occupied": 3,
+    "type": "1 BHK Studio + 2 BHK"
+  },
+  "rooms": [
+    { "name": "B12 · Strategy Room", "capacity": 8, "status": "AVAILABLE", "nextSlot": "Today · 14:00 IST" },
+    { "name": "B12 · Pitch Room", "capacity": 14, "status": "RESERVED", "nextSlot": "Today · 16:30 IST · Aarav" },
+    { "name": "B12 · Quiet Pod 1", "capacity": 1, "status": "AVAILABLE", "nextSlot": "Today · 11:00 IST" },
+    { "name": "B12 · Quiet Pod 2", "capacity": 1, "status": "RESERVED", "nextSlot": "Today · 10:30 IST · Diya" },
+    { "name": "B12 · Lab (GPU)", "capacity": 4, "status": "MAINTENANCE", "nextSlot": "Tomorrow · 09:00 IST" }
+  ],
+  "coworkingReservations": [
+    { "title": "Cohort 04 Onboarding · drop-in", "date": "27 Mar · 18:30 IST", "seats": 2 },
+    { "title": "Investor Office Hours", "date": "29 Mar · 11:00 IST", "seats": 1 },
+    { "title": "AP Skills Fund Hiring Day", "date": "02 Apr · 10:00 IST", "seats": 4 }
+  ],
+  "occupancyHistory": [62, 68, 71, 74, 78, 82, 78]
+}

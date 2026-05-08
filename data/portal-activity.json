@@ -1,0 +1,14 @@
+[
+  { "id": "a1", "title": "Priya Nair joined Tower B · Level 12", "kind": "FOUNDER", "timestamp": "2m ago" },
+  { "id": "a2", "title": "Pitch Room reserved · 16:30 IST", "kind": "WORKSPACE", "timestamp": "9m ago" },
+  { "id": "a3", "title": "Q1 compliance report verified · 84%", "kind": "COMPLIANCE", "timestamp": "14m ago" },
+  { "id": "a4", "title": "Tax incentive filing accepted by DPIIT", "kind": "POLICY", "timestamp": "32m ago" },
+  { "id": "a5", "title": "Investor AMA · 142 attendees confirmed", "kind": "EVENT", "timestamp": "1h ago" },
+  { "id": "a6", "title": "Tejaswi Bandari onboarded · IIIT Sri City", "kind": "HIRE", "timestamp": "1h ago" },
+  { "id": "a7", "title": "Skills Fund disbursement · ₹4.80L", "kind": "FINANCE", "timestamp": "2h ago" },
+  { "id": "a8", "title": "Rohan Singh · residency under review", "kind": "RESIDENCY", "timestamp": "3h ago" },
+  { "id": "a9", "title": "Lab (GPU) maintenance scheduled · 09:00 IST", "kind": "WORKSPACE", "timestamp": "5h ago" },
+  { "id": "a10", "title": "Founder Dinner · 38 RSVPs", "kind": "EVENT", "timestamp": "Today · 09:14 IST" },
+  { "id": "a11", "title": "Global Trade Corridor application filed", "kind": "POLICY", "timestamp": "Yesterday · 17:50 IST" },
+  { "id": "a12", "title": "Karthik Iyer onboarded · senior engineer", "kind": "HIRE", "timestamp": "Yesterday · 11:20 IST" }
+]
