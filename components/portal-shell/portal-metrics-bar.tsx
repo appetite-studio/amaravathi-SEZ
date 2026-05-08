@@ -55,18 +55,18 @@ export function PortalMetricsBar({
 
   return (
     <div className="border-b-2 border-[var(--border)] bg-[var(--header-dark)] text-white">
-      <div className="flex flex-wrap items-stretch divide-x-2 divide-white/10">
+      <div className="flex snap-x snap-mandatory items-stretch divide-x-2 divide-white/10 overflow-x-auto md:flex-wrap md:overflow-visible">
         {list.map((m, i) => (
           <motion.div
             key={`${m.label}-${i}`}
             initial={{ opacity: 0, y: 6 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.35, delay: i * 0.06 }}
-            className="flex flex-1 min-w-[160px] flex-col gap-1.5 px-6 py-4"
+            className="flex min-w-[140px] shrink-0 snap-start flex-col gap-1.5 px-4 py-3 sm:min-w-[160px] sm:px-6 sm:py-4 md:flex-1 md:shrink"
           >
             <div
               className={cn(
-                "font-display text-[26px] font-extrabold leading-none tracking-[-0.01em]",
+                "font-display text-[22px] font-extrabold leading-none tracking-[-0.01em] sm:text-[26px]",
                 m.highlight ? "text-[var(--accent)]" : "text-white"
               )}
             >

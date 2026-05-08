@@ -46,18 +46,18 @@ export function MetricsBar({
         className
       )}
     >
-      <div className="mx-auto flex max-w-[1280px] flex-wrap items-center justify-between gap-x-12 gap-y-6 px-8 py-6">
+      <div className="mx-auto flex max-w-[1280px] snap-x snap-mandatory items-center gap-x-8 gap-y-6 overflow-x-auto px-4 py-4 sm:gap-x-12 sm:px-6 sm:py-6 md:flex-wrap md:justify-between md:overflow-visible md:px-8">
         {items.map((item, i) => (
           <motion.div
             key={`${item.label}-${i}`}
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.35, delay: i * 0.06 }}
-            className="flex min-w-[150px] flex-col gap-2"
+            className="flex min-w-[130px] shrink-0 snap-start flex-col gap-2 sm:min-w-[150px] md:shrink"
           >
             <div
               className={cn(
-                "font-display text-[36px] font-extrabold leading-none tracking-[-0.01em]",
+                "font-display text-[28px] font-extrabold leading-none tracking-[-0.01em] sm:text-[32px] md:text-[36px]",
                 item.highlight && "text-[var(--accent)]"
               )}
             >

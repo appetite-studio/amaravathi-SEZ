@@ -461,7 +461,7 @@ export default function GovtOverviewPage() {
           </div>
 
           <div className="border-2 border-[var(--border)] bg-white">
-            <div className="grid grid-cols-[1.6fr_1.1fr_0.8fr_70px_70px_0.9fr_120px_120px_36px] gap-3 border-b-2 border-[var(--border)] bg-[var(--header-dark)] px-5 py-3 font-mono text-[9px] uppercase tracking-[0.22em] text-white/80">
+            <div className="hidden grid-cols-[1.6fr_1.1fr_0.8fr_70px_70px_0.9fr_120px_120px_36px] gap-3 border-b-2 border-[var(--border)] bg-[var(--header-dark)] px-5 py-3 font-mono text-[9px] uppercase tracking-[0.22em] text-white/80 lg:grid">
               <span>COMPANY · CIN</span>
               <span>SECTOR</span>
               <span>TIER</span>
@@ -478,6 +478,7 @@ export default function GovtOverviewPage() {
               const flags = companyFlags[c.name] ?? [];
               return (
                 <div key={c.cin}>
+                  {/* Desktop row */}
                   <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
@@ -487,7 +488,7 @@ export default function GovtOverviewPage() {
                       setExpandedCompany(expanded ? null : c.name)
                     }
                     className={cn(
-                      "grid cursor-pointer grid-cols-[1.6fr_1.1fr_0.8fr_70px_70px_0.9fr_120px_120px_36px] items-center gap-3 border-b border-[var(--border-soft)] px-5 py-3.5 transition-colors hover:bg-[#FAFAFB]",
+                      "hidden cursor-pointer grid-cols-[1.6fr_1.1fr_0.8fr_70px_70px_0.9fr_120px_120px_36px] items-center gap-3 border-b border-[var(--border-soft)] px-5 py-3.5 transition-colors hover:bg-[#FAFAFB] lg:grid",
                       expanded && "bg-[var(--accent-soft)]"
                     )}
                   >
@@ -550,6 +551,103 @@ export default function GovtOverviewPage() {
                       company={c}
                       onAction={(a) => handleAuthorityAction(c, a)}
                     />
+                  </motion.div>
+
+                  {/* Mobile card */}
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.25, delay: i * 0.04 }}
+                    className={cn(
+                      "flex cursor-pointer flex-col gap-3 border-b border-[var(--border-soft)] px-4 py-4 transition-colors hover:bg-[#FAFAFB] lg:hidden",
+                      expanded && "bg-[var(--accent-soft)]"
+                    )}
+                  >
+                    <div
+                      onClick={() =>
+                        setExpandedCompany(expanded ? null : c.name)
+                      }
+                      className="flex items-start justify-between gap-3"
+                    >
+                      <div className="flex min-w-0 flex-col leading-tight">
+                        <div className="flex flex-wrap items-center gap-1.5">
+                          <span className="font-mono text-[12px] uppercase tracking-[0.04em] text-[var(--text)]">
+                            {c.name}
+                          </span>
+                          {flags.length > 0 && (
+                            <span
+                              className="inline-flex items-center gap-1 border-[1.5px] border-[var(--accent)] px-1.5 py-0.5 font-mono text-[8px] uppercase tracking-[0.22em] text-[var(--accent)]"
+                              title="Authority actions logged"
+                            >
+                              <Flag className="h-2.5 w-2.5" strokeWidth={2.5} />
+                              {flags.length}
+                            </span>
+                          )}
+                        </div>
+                        <span className="mt-0.5 font-mono text-[9px] uppercase tracking-[0.22em] text-[var(--text-3)]">
+                          {c.cin} · {c.sector}
+                        </span>
+                      </div>
+                      <div className="flex shrink-0 items-center gap-2">
+                        <RiskPill level={c.riskLevel} />
+                        <AuthorityDropdown
+                          company={c}
+                          onAction={(a) => handleAuthorityAction(c, a)}
+                        />
+                      </div>
+                    </div>
+
+                    <div
+                      onClick={() =>
+                        setExpandedCompany(expanded ? null : c.name)
+                      }
+                      className="grid grid-cols-3 gap-3 border-t-2 border-[var(--border-soft)] pt-3"
+                    >
+                      <MobileStat label="TIER" value={c.tier} />
+                      <MobileStat
+                        label="FOUNDERS"
+                        value={String(c.founders + delta)}
+                        accent={delta > 0 ? `+${delta}` : undefined}
+                      />
+                      <MobileStat
+                        label="HEAD"
+                        value={String(c.headcount)}
+                      />
+                    </div>
+
+                    <div
+                      onClick={() =>
+                        setExpandedCompany(expanded ? null : c.name)
+                      }
+                      className="flex items-center gap-3"
+                    >
+                      <div className="flex flex-1 items-center gap-2">
+                        <span className="font-mono text-[9px] uppercase tracking-[0.22em] text-[var(--text-3)]">
+                          HIRING
+                        </span>
+                        <div className="flex flex-1 items-center gap-2">
+                          <Progress value={c.hiring} />
+                          <span className="font-mono text-[10px] tabular-nums text-[var(--text)]">
+                            {c.hiring}%
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      onClick={() =>
+                        setExpandedCompany(expanded ? null : c.name)
+                      }
+                      className="flex items-center justify-between border-t-2 border-[var(--border-soft)] pt-2"
+                    >
+                      <span className="font-mono text-[9px] uppercase tracking-[0.22em] text-[var(--text-3)]">
+                        REVIEWED {c.lastReviewed} · {c.reviewer}
+                      </span>
+                      <span className="font-mono text-[9px] uppercase tracking-[0.22em] text-[var(--accent)]">
+                        {expanded ? "TAP TO COLLAPSE" : "TAP FOR DETAILS"}
+                      </span>
+                    </div>
                   </motion.div>
 
                   <AnimatePresence>
@@ -699,7 +797,7 @@ export default function GovtOverviewPage() {
           </div>
 
           <div className="border-2 border-[var(--border)] bg-white">
-            <div className="grid grid-cols-[1.4fr_1.6fr_1fr_1fr_120px_80px] gap-4 border-b-2 border-[var(--border)] bg-[var(--header-dark)] px-5 py-3 font-mono text-[9px] uppercase tracking-[0.22em] text-white/80">
+            <div className="hidden grid-cols-[1.4fr_1.6fr_1fr_1fr_120px_80px] gap-4 border-b-2 border-[var(--border)] bg-[var(--header-dark)] px-5 py-3 font-mono text-[9px] uppercase tracking-[0.22em] text-white/80 lg:grid">
               <span>FOUNDER</span>
               <span>COMPANY</span>
               <span>SECTOR</span>
@@ -708,33 +806,58 @@ export default function GovtOverviewPage() {
               <span>SCORE</span>
             </div>
             {portalDirectory.slice(0, 10).map((f) => (
-              <div
-                key={f.id}
-                className="grid grid-cols-[1.4fr_1.6fr_1fr_1fr_120px_80px] items-center gap-4 border-b border-[var(--border-soft)] px-5 py-3 last:border-b-0 hover:bg-[#FAFAFB]"
-              >
-                <div className="flex flex-col leading-tight">
-                  <span className="font-mono text-[12px] uppercase tracking-[0.04em] text-[var(--text)]">
-                    {f.name}
+              <div key={f.id}>
+                {/* Desktop row */}
+                <div className="hidden grid-cols-[1.4fr_1.6fr_1fr_1fr_120px_80px] items-center gap-4 border-b border-[var(--border-soft)] px-5 py-3 last:border-b-0 hover:bg-[#FAFAFB] lg:grid">
+                  <div className="flex flex-col leading-tight">
+                    <span className="font-mono text-[12px] uppercase tracking-[0.04em] text-[var(--text)]">
+                      {f.name}
+                    </span>
+                    <span className="font-mono text-[9px] uppercase tracking-[0.22em] text-[var(--text-3)]">
+                      {f.city}
+                    </span>
+                  </div>
+                  <span className="font-mono text-[11px] uppercase tracking-[0.04em] text-[var(--text-2)]">
+                    {f.company}
                   </span>
-                  <span className="font-mono text-[9px] uppercase tracking-[0.22em] text-[var(--text-3)]">
-                    {f.city}
+                  <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-[var(--text)]">
+                    {f.sector}
+                  </span>
+                  <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-[var(--success)]">
+                    {f.residencyStatus}
+                  </span>
+                  <span className="font-mono text-[10px] uppercase tracking-[0.04em] text-[var(--text-2)]">
+                    {f.founderType}
+                  </span>
+                  <span className="font-display text-[14px] font-bold text-[var(--accent)]">
+                    {f.contributionScore}
                   </span>
                 </div>
-                <span className="font-mono text-[11px] uppercase tracking-[0.04em] text-[var(--text-2)]">
-                  {f.company}
-                </span>
-                <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-[var(--text)]">
-                  {f.sector}
-                </span>
-                <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-[var(--success)]">
-                  {f.residencyStatus}
-                </span>
-                <span className="font-mono text-[10px] uppercase tracking-[0.04em] text-[var(--text-2)]">
-                  {f.founderType}
-                </span>
-                <span className="font-display text-[14px] font-bold text-[var(--accent)]">
-                  {f.contributionScore}
-                </span>
+
+                {/* Mobile card */}
+                <div className="flex flex-col gap-2 border-b border-[var(--border-soft)] px-4 py-3.5 last:border-b-0 hover:bg-[#FAFAFB] lg:hidden">
+                  <div className="flex items-start justify-between gap-3">
+                    <div className="flex min-w-0 flex-col leading-tight">
+                      <span className="truncate font-mono text-[12px] uppercase tracking-[0.04em] text-[var(--text)]">
+                        {f.name}
+                      </span>
+                      <span className="font-mono text-[9px] uppercase tracking-[0.22em] text-[var(--text-3)]">
+                        {f.city} · {f.founderType}
+                      </span>
+                    </div>
+                    <span className="shrink-0 font-display text-[18px] font-extrabold leading-none text-[var(--accent)]">
+                      {f.contributionScore}
+                    </span>
+                  </div>
+                  <div className="flex items-center justify-between gap-3 border-t border-[var(--border-soft)] pt-2">
+                    <span className="truncate font-mono text-[10px] uppercase tracking-[0.04em] text-[var(--text-2)]">
+                      {f.company} · {f.sector}
+                    </span>
+                    <span className="shrink-0 font-mono text-[9px] uppercase tracking-[0.22em] text-[var(--success)]">
+                      {f.residencyStatus}
+                    </span>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
@@ -1228,6 +1351,32 @@ function Field({ k, v }: { k: string; v: string }) {
       </span>
       <span className="font-mono text-[11px] uppercase tracking-[0.04em] text-[var(--text)]">
         {v}
+      </span>
+    </div>
+  );
+}
+
+function MobileStat({
+  label,
+  value,
+  accent,
+}: {
+  label: string;
+  value: string;
+  accent?: string;
+}) {
+  return (
+    <div className="flex flex-col gap-0.5 leading-tight">
+      <span className="font-mono text-[9px] uppercase tracking-[0.22em] text-[var(--text-3)]">
+        {label}
+      </span>
+      <span className="flex items-baseline gap-1 font-display text-[15px] font-bold text-[var(--text)]">
+        {value}
+        {accent && (
+          <span className="font-mono text-[9px] tracking-[0.22em] text-[var(--accent)]">
+            {accent}
+          </span>
+        )}
       </span>
     </div>
   );

@@ -37,14 +37,14 @@ export function AppTopbar({
 
   return (
     <header className="sticky top-0 z-40 border-b-2 border-[var(--border)] bg-[var(--header-dark)] text-white">
-      <div className="mx-auto flex max-w-[1280px] items-center justify-between gap-6 px-8 py-4">
-        <Link href="/app/identity" className="flex items-center gap-3">
-          <DistrictSeal size={26} className="text-[var(--accent)]" />
-          <div className="flex flex-col leading-tight">
-            <span className="font-mono text-[11px] uppercase tracking-[0.22em]">
+      <div className="mx-auto flex max-w-[1280px] items-center justify-between gap-3 px-4 py-3 sm:gap-6 sm:px-6 sm:py-4 lg:px-8">
+        <Link href="/app/identity" className="flex min-w-0 items-center gap-2.5 sm:gap-3">
+          <DistrictSeal size={24} className="shrink-0 text-[var(--accent)] sm:scale-[1.08]" />
+          <div className="flex min-w-0 flex-col leading-tight">
+            <span className="truncate font-mono text-[10px] uppercase tracking-[0.18em] sm:text-[11px] sm:tracking-[0.22em]">
               Amaravati · Startup Capital
             </span>
-            <span className="font-mono text-[9px] uppercase tracking-[0.28em] text-white/60">
+            <span className="hidden font-mono text-[9px] uppercase tracking-[0.28em] text-white/60 sm:block">
               Founder Console · District 01
             </span>
           </div>
@@ -96,11 +96,11 @@ export function AppTopbar({
           >
             <LogOut className="h-4 w-4" strokeWidth={1.5} />
           </button>
-          <div className="ml-2 hidden items-center gap-3 border-l-2 border-white/20 pl-3 md:flex">
-            <div className="flex h-9 w-9 items-center justify-center border-[1.5px] border-white/40 bg-white/5 font-mono text-[11px] tracking-[0.1em]">
+          <div className="ml-1 flex items-center gap-3 border-l-2 border-white/20 pl-2 sm:ml-2 sm:pl-3">
+            <div className="flex h-9 w-9 shrink-0 items-center justify-center border-[1.5px] border-white/40 bg-white/5 font-mono text-[11px] tracking-[0.1em]">
               {initials}
             </div>
-            <div className="flex flex-col leading-tight">
+            <div className="hidden flex-col leading-tight md:flex">
               <span className="font-mono text-[11px] uppercase tracking-[0.18em]">
                 {session?.name ?? "Diya Rajiv"}
               </span>

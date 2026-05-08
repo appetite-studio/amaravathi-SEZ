@@ -334,7 +334,7 @@ function RegistryField({
 }) {
   return (
     <div
-      className={`flex flex-col gap-1.5 px-6 py-5 ${
+      className={`flex flex-col gap-1.5 px-4 py-4 md:px-6 md:py-5 ${
         last
           ? ""
           : "border-b-2 border-[var(--border-soft)] md:border-b-0 md:border-r-2"

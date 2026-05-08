@@ -1,11 +1,17 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { Bell, LogOut, Search } from "lucide-react";
+import { Bell, LogOut, Menu, Search } from "lucide-react";
 import { clearSession, useSession } from "@/lib/store";
 import { portalCompany } from "@/lib/data";
 
-export function PortalTopbar({ variant }: { variant: "company" | "govt" }) {
+export function PortalTopbar({
+  variant,
+  onMenuOpen,
+}: {
+  variant: "company" | "govt";
+  onMenuOpen?: () => void;
+}) {
   const router = useRouter();
   const { session } = useSession();
 
@@ -40,18 +46,28 @@ export function PortalTopbar({ variant }: { variant: "company" | "govt" }) {
       : "GOVT PREVIEW · ECOSYSTEM";
 
   return (
-    <header className="flex items-center justify-between border-b-2 border-[var(--border)] bg-white px-6 py-3.5">
-      <div className="flex flex-col leading-tight">
-        <span className="label">{left.eyebrow}</span>
-        <span className="mt-1 font-display text-[13px] font-bold uppercase tracking-[0.04em] text-[var(--text)]">
-          {left.title}
-        </span>
-        <span className="mt-0.5 font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--text-3)]">
-          {left.meta}
-        </span>
+    <header className="flex items-center justify-between gap-3 border-b-2 border-[var(--border)] bg-white px-4 py-3 sm:px-6 sm:py-3.5">
+      <div className="flex min-w-0 items-center gap-3">
+        <button
+          type="button"
+          onClick={onMenuOpen}
+          className="inline-flex h-9 w-9 shrink-0 items-center justify-center border-[1.5px] border-[var(--border-soft)] text-[var(--text-2)] transition-colors hover:border-[var(--border)] hover:text-[var(--text)] lg:hidden"
+          aria-label="Open navigation menu"
+        >
+          <Menu className="h-4 w-4" strokeWidth={1.5} />
+        </button>
+        <div className="flex min-w-0 flex-col leading-tight">
+          <span className="label hidden sm:block">{left.eyebrow}</span>
+          <span className="mt-0 truncate font-display text-[12px] font-bold uppercase tracking-[0.04em] text-[var(--text)] sm:mt-1 sm:text-[13px]">
+            {left.title}
+          </span>
+          <span className="mt-0.5 hidden font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--text-3)] sm:block">
+            {left.meta}
+          </span>
+        </div>
       </div>
 
-      <div className="flex items-center gap-2">
+      <div className="flex shrink-0 items-center gap-2">
         <div className="relative hidden md:block">
           <Search
             className="absolute left-2.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-[var(--text-3)]"
@@ -91,7 +107,7 @@ export function PortalTopbar({ variant }: { variant: "company" | "govt" }) {
         <button
           type="button"
           onClick={onLogout}
-          className="ml-1 inline-flex h-9 w-9 items-center justify-center border-[1.5px] border-[var(--border-soft)] text-[var(--text-2)] transition-colors hover:border-[var(--border)] hover:text-[var(--text)]"
+          className="ml-1 hidden h-9 w-9 items-center justify-center border-[1.5px] border-[var(--border-soft)] text-[var(--text-2)] transition-colors hover:border-[var(--border)] hover:text-[var(--text)] md:inline-flex"
           aria-label="Log out"
         >
           <LogOut className="h-4 w-4" strokeWidth={1.5} />

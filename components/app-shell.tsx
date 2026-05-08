@@ -35,7 +35,7 @@ export function AppShell({ children }: { children: ReactNode }) {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -4 }}
               transition={{ duration: 0.25, ease: "easeOut" }}
-              className="mx-auto max-w-[1280px] px-8 py-12"
+              className="mx-auto max-w-[1280px] px-4 py-6 sm:px-6 sm:py-8 lg:px-8 lg:py-12"
             >
               {children}
             </motion.div>
